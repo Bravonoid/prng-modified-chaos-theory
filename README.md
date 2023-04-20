@@ -14,9 +14,9 @@ In this method, we will use the pixel values of a grayscale image as a seed. Thr
 
 Then, we will calculate the next pseudorandom value using the following formula:
 
-![PRNG Formula](https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i})
+![PRNG Formula](https://latex.codecogs.com/svg.image?\bg{white}\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i})
 
-![PRNG Formula](<https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;(\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1})>)
+![PRNG Formula](<https://latex.codecogs.com/svg.image?\bg{black}\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;(\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1})>)
 
 This will produce a different pseudorandom value every time it is run, as the pixel values of the grayscale image will change every time it is run and the norm value of the pixel matrix will also change every time it is run.
 
