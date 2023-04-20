@@ -14,7 +14,11 @@ In this method, we will use the pixel values of a grayscale image as a seed. Thr
 
 Then, we will calculate the next pseudorandom value using the following formula:
 
-![PRNG Formula](https://latex.codecogs.com/svg.image?\bg{white}\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i})
+![PRNG Formula](https://latex.codecogs.com/png.image?\dpi{110}\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i})
+
+![PRNG Formula](https://latex.codecogs.com/png.image?\dpi{110}\bg{white}\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i})
+
+![PRNG Formula](https://latex.codecogs.com/png.image?\dpi{110}\bg{black}\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i})
 
 ![PRNG Formula](<https://latex.codecogs.com/svg.image?\bg{black}\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;(\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1})>)
 
