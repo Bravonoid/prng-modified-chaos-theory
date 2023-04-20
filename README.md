@@ -14,9 +14,9 @@ In this method, we will use the pixel values of a grayscale image as a seed. Thr
 
 Then, we will calculate the next pseudorandom value using the following formula:
 
-<img src="https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i}">
+![PRNG Formula](https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i})
 
-<img src="https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;(\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1})">
+![PRNG Formula](<https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;(\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1})>)
 
 This will produce a different pseudorandom value every time it is run, as the pixel values of the grayscale image will change every time it is run and the norm value of the pixel matrix will also change every time it is run.
 
@@ -24,21 +24,21 @@ This will produce a different pseudorandom value every time it is run, as the pi
 
 The norm of a pixel matrix is the sum of the absolute values of the pixel values in the matrix. The norm of a pixel matrix is used to calculate the rate of change of the pseudorandom value. The norm of a pixel matrix is calculated using the following formula:
 
-<img src="https://latex.codecogs.com/svg.image?\text{Norm}_{i}&space;=&space;\sum_{j=1}^{n}&space;\left&space;|&space;\text{Pixel}_{i}&space;\right&space;|">
+![Norm Formula](https://latex.codecogs.com/svg.image?\text{Norm}_{i}&space;=&space;\sum_{j=1}^{n}&space;\left&space;|&space;\text{Pixel}_{i}&space;\right&space;|)
 
 ### Latest Random Decimal
 
 The latest random decimal is the decimal value of the previous pseudorandom value. The latest random decimal is used to calculate the next pseudorandom value. The latest random decimal is calculated using the following formula:
 
-<img src="https://latex.codecogs.com/svg.image?\text{LatestRandomDecimal}_{i}&space;=&space;\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1}">
+![Latest Random Decimal Formula](<https://latex.codecogs.com/svg.image?\text{LatestRandomDecimal}_{i}&space;=&space;\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1}>)
 
 ### Pseudorandom Value
 
 The pseudorandom value is calculated using the following formula:
 
-<img src="https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i}">
+![PRNG Formula](https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;\text{LatestRandomDecimal}_{i})
 
-<img src="https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;(\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1})">
+![PRNG Formula](<https://latex.codecogs.com/svg.image?\text{PRNG}_{i}&space;=&space;\text{Rate}_{i}&space;\times&space;\text{Pixel}_{i}&space;\times&space;(\text{PRNG}_{i-1}&space;-&space;\text{round(PRNG)}_{i-1})>)
 
 ## Parameters
 
